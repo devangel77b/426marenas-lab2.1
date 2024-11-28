@@ -1,0 +1,223 @@
+﻿Testing Newton's Second Law in an Accelerating System
+Miguel Arenas, Callie Butash, Jake Chin, Kriti Malhotra, Grace Nealon, Petra Rofman
+
+
+Newton’s Second Law claims that force is the product of mass and acceleration (ΣF=ma). It is applied when calculating the acceleration and velocity of a system with limited data. Using a cart and pulley system, we examined the relationships between force, mass, and acceleration. We concluded that the relationship between force and acceleration is directly proportional, while the relationship between mass and acceleration is inversely proportional, confirming Newton’s Second Law. 
+
+
+Introduction
+
+
+Force is the product of mass and acceleration:
+
+
+        ΣF=ma                         (1)
+
+
+Where ΣF is the sum of all forces acting on the system, m is the mass in kg, and a is the acceleration in m/s². Equation (1) illustrates how a system's forces depend on the object's mass and acceleration.              
+        This relationship between force, mass, and acceleration is useful in determining the acceleration that acts on an object without access to information that can be used to calculate acceleration using kinematics equations (Equations (2), (3), and (4)) like initial (vₒ) and final velocity (vf) measured in m/s, time (t) measured in seconds, and initial (xₒ) and final position (xf) measured in meters.     
+
+
+     vf = vₒ + at                         (2)
+             v² = vₒ² + 2a(xf - xₒ)                                 (3)
+xf = xₒ + vₒt + ½at²                  (4)
+
+
+To facilitate hypotheses, we set up a system with a cart on a track attached by a string and pulley to a hanging mass (depicted in Figure 1), allowing force and mass to be varied somewhat independently since some of the mass in the system was subject to gravitational force, while some were not.
+        We considered the acceleration, force, and mass, and hypothesized that there could be no acceleration in the system. Newton’s first law gives us the static case where 
+
+
+                H0: ΣF = 0.                         (5)
+
+
+ Alternatively, we hypothesized that the net force would increase as the mass increased and that the acceleration of the system would decrease as mass increased, therefore the force would increase as the acceleration increased, while acceleration and mass have an inverse relationship (Equation (6)).
+
+
+H₁: ΣF = ma                              (6)
+
+
+        Or, we hypothesized that either Newton’s laws wouldn’t apply, or something was erroneous with the considered forces, resulting in the force being equal to un-modeled forces acting that have a significant effect on acceleration (Equations (7) and (8)).
+
+
+                H2: ΣF ≠ ma                         (7)
+  H3: ΣF ≠ 0                        (8)
+
+
+These hypotheses were tested through a total of six trials, with a cart that had a constant weight, and different masses on the other end of the pulley. The time was measured to calculate the relationships between force, mass, and acceleration for both values of hanging mass. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FIG. 1.        Momentum track and pulley setup used for experiments. Total track length 1.0m.
+
+
+Methods and Materials
+
+
+Tests
+
+
+        Tests (n = 6) were conducted using a 1.0 m aluminum momentum test track (Pasco Scientific; Roseville, CA). The test track was outfitted with one cart (Pasco Scientific; Roseville, CA) with ball bearings and knife-edge wheels. The cart's mass was 0.493 kg and it carried a 1.000 kg mass for a total mass of 1.493 kg. Attached to the cart was a string that looped over a pulley attached to the table with an iron clamp. On the other side of the string, for the first three trials, was a 0.050 kg mass, which was swapped out for a 0.200 kg mass for the last three trials. The cart was released from rest and the trials were timed for the time it took for the cart to move 0.70 m along the track when two different masses were hung to provide gravitational force. The data was logged in a Google Document (Google; Mountain View, CA) on a school-issued Google Chromebook (Google; Mountain View, CA). 
+
+
+Acceleration calculations
+
+
+  
+  
+
+FIG. 2.        Free body diagrams for m1 (left) and m2 (right) created in Google Drawings.
+
+
+The expected acceleration can be calculated using the tensions of each mass. As seen in Fig. 2, the mass on the track moving horizontally is m1 and the mass falling is m2. The track is frictionless, so the force of m1 equals the tension and is calculated as
+
+
+    F1 = m1a = T                                (9)
+
+
+alternatively using m2 as
+
+
+F2 = -m2a = T - m2g.               (10)
+
+
+        Using the substitution of tension, T, and some manipulation of the two equations, the acceleration can be predicted as
+
+
+                a = m2g / (m1 + m2).               (11)
+The measured times and distances were used to calculate acceleration with the kinematic equation
+
+
+x = x0 + v0t + ½at2.               (12)
+
+
+After setting the initial position and velocity to zero, the equation can be solved for acceleration so
+
+
+       a = 2x / t2.                       (13)
+
+
+Results
+
+
+Table 1. Time Data (m1 = 1.000 kg, m2 = 0.050 kg)
+Trials
+	Time (s)
+	Average Time (s)
+	Acceleration (m/s2)
+	1
+	2.43
+	2.31
+	0.32
+	2
+	2.22
+	
+
+	
+
+	3
+	2.28
+	
+
+	
+
+	
+
+TABLE 1. Data from experiments when the cart was 1.000 kg and the pulley was 0.050 kg. 
+Mean time (s): 2.31±0.11
+Mean acceleration (m/s2): 0.32±0.02
+
+
+Table 2. Time Data (m1 = 1.000 kg, m2 = 0.200 kg)
+Trials
+	Time (s)
+	Average Time (s)
+	Acceleration (m/s2)
+	1
+	1.19
+	1.00
+	1.16
+	2
+	0.91
+	
+
+	
+
+	3
+	0.91
+	
+
+	
+
+	
+
+TABLE 2. Data from experiments when the cart was 1.000 kg and the pulley was 0.200 kg.
+Mean time (s): 1.00±0.076
+Mean Acceleration (m/s2): 1.16±0.01
+
+
+        Tables 1 and 2 display the time data we collected for calculating the acceleration. 
+  
+
+FIG. 3.        The calculated acceleration of the three trials for each pulley. This includes the 0.050 kg mass and the 0.200 kg mass. The results are limited to two hanging values (0.050kg and 0.200 kg). Future experiments could include more variation in between to strengthen the observed trends further.
+
+
+As seen from Tables 1 and 2 and Figure 3, the trials with the 0.050 kg mass have a lower acceleration than the trials with the 0.200 kg mass.
+        The data proves our hypothesis of an inverse relationship between mass and acceleration and a direct relationship between force and acceleration.
+
+
+Discussion
+
+
+Can we confirm that F=ma through experimentation?
+
+
+Our trials demonstrated that as the pulley's mass, or the gravitational force, increases, the cart's acceleration increases. This supported our hypothesis ΣF = ma (Equation (6)). The force acting on the system increased by increasing the pulley's mass. The experimental data corroborated the hypothesis because the increased pulley mass and acceleration illustrate a direct relationship between force and acceleration. Our data showed a consistent pattern where an increase in the mass of the pulley increased the net force creating an increase in acceleration. This suggests that acceleration and force are proportional, ensuring that mass is constant (Equation (6)). 
+
+
+Sources of experimental error
+
+
+A potential source of experimental error stems from the movement of the track between trials. This caused slight differences in tension, potentially affecting the calculated acceleration of the cart. 
+Additionally, the person's timing was not consistent across all trials, nor were they rotated methodically by trial. This could result in small inconsistencies with the timing that may skew the results of calculating acceleration using a formula involving time or any other calculations involving time. In further testing, the time can be measured with sensors or videos to be more accurate. 
+Furthermore, the expected acceleration was calculated assuming the string was massless and friction had no effect on the cart. Since the experiment used a string with mass and did not eradicate the force of friction, this could result in possible differences between the experimental and expected acceleration.
+
+
+Acknowledgments 
+
+
+        We thank Dr. Evangelista for his contribution of lessons on force and assistance with any of our questions, Sir Issac Newton for the discovery of his three laws of motion, and Antonella Ortega for her momentum writeup as a reference. We also thank anyone who contributed to peer reviewing our rough draft and their comments.
+
+
+Contributions 
+
+
+        P. Rofman wrote the abstract, introduction, test description, part of the discussion, and recorded data during the trials. M. Arenas created graphs of the results and helped describe them and draw conclusions. C. Butash made the free-body diagrams and momentum track diagrams, computed acceleration, and wrote aspects of the discussion and parts of other sections. K. Malhotra wrote the discussion and part of the results, noted the materials, timed the trials, and recorded the results. J. Chin wrote about the sources of the experimental error and helped collect data and the abstract. G. Nealon led the track's setup, wrote out the procedures, and conducted each trial when we collected data. Everyone contributed to editing, proofreading, and assisting others with the sections they worked on.

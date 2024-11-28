@@ -1,0 +1,63 @@
+This is a review of the manuscript Nealon et al, Testing Newton's Second Law.
+The manuscript advertises to test Newton's second law (F=ma) by using a
+two-dimensional cart (a one dimensional movement is used) and pulley system
+to examine the relationships between F, m, and a. The manuscript claims to
+show F and a are directly proportional, and a and m inversely proportional,
+but the data are not presented in a way to see this easily. I recommend
+major revisions.
+
+Introduction: The introduction is relatively clean. It sets up the equation
+form of Newton's second law (F=ma) in the case where mass is not changing.
+It then goes on to write the equations of motion for constant acceleration,
+as the measure of acceleration used by the researchers is time to move some
+distance d. Finally, it sets up two testable hypotheses; either F=ma or F is not ma. It might have been preferable to setup three testable hypotheses;
+F=0 is the static case addressed by Newton's first law. F=ma is the second law
+under test here. F=some other thing would normally mean Newton hosed something
+up or that there are un-modeled forces acting that are significant drivers
+of the acceleration.
+
+Design of experiment: The design of experiment here is confused. The authors
+state they do 24 trials with a haphazard combination of different total mass,
+different hanging mass. It might have made the work stronger if they held
+most factors constant and changed only one variable; for example, hold total
+system mass constant and only change the hanging mass. This would have allowed
+a more direct test of F = ma byt changing F with m held constant.
+
+Methods and materials: These are unacceptable and cannot be replicated.
+The authors have given a bullet list of materials only. The materials source
+is not given for key pieces like the cart, track. Some items like timer or
+string or meterstick are trivial; or data should be given on them so we
+can evaluate if handling the string and pulley as massless or frictionless
+is valid. The methods are also described in a round-about way not getting to
+the point: that the authors timed the time for the cart to move distance
+when different masses were hung to provide mg force. A more systematic pattern
+of replicates would have been nice here too. The figure given to illustrate
+the methods and materials is small, has no scale, and gives a top down view
+of the track, with extraneous details and the key feature (that the hanging
+mass provides the force is hanging) is absent.
+
+A calculational proceudre is given that derives the acceleration of the system
+as a function of the masses m1 and m2. If this was the main thing to be
+validated the authors could have placed this in the introduction as the main
+thing, and presented their results in terms of (nondimensionalized) acceleration
+versus m2/(m1+m2). This would have resulted in a clean linear graph, with
+departures from it showing places where the theory is wrong. For example, at
+the extremes where friction and timing imprecision would make the a measurement
+difficult or affect the motion.
+
+Results: Results are given after discussion. This is wrong. Results should
+be given before the discussion and presented with accompanying captions
+and text explaining factually what is seen. Strangely, the authors
+provide bar charts for everything when the data (mass = unspecified what mass)
+are continuous variables.
+
+Discussion: This paper mixes what should be results and discussion. Please
+keep discussion of meaning of the graphs and results separate from the factual
+presentation of what was actually seen. The manuscript really suffers from not
+having some standard test of whether F=ma or not, falling back instead
+on handwaving explanations of when something appears directly or inversely
+proportional without actually testing it.
+
+Figures: Problems with the figures were mentioned above. The setup photo does
+not do a good job of illustrating the setup, while the results graphs
+do not help us actually test if F=ma or if a = g m2/(m1+m2). 
