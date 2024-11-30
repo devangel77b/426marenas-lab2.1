@@ -8,6 +8,7 @@
 \usepackage{siunitx}
 \sisetup{separate-uncertainty=true}
 \usepackage{cleveref}
+\usepackage{svg}
 
 
 
@@ -25,7 +26,7 @@
 \date{\today}
 
 \begin{abstract}
-Newton’s Second Law claims that force is the product of mass and acceleration ($\sum F = ma$). It is applied when calculating the acceleration and velocity of a system with limited data. Using a cart and pulley system, we examined the relationships between force, mass, and acceleration. We concluded that the relationship between force and acceleration is directly proportional, while the relationship between mass and acceleration is inversely proportional, confirming Newton’s second law. 
+Newton’s second law claims that force is the product of mass and acceleration ($\sum F = ma$). It could be of great use when calculating the acceleration, and thus velocity and position, of a system based on the external forces acting on it; therefore we tested its validity. Using a cart and pulley system, we examined the relationships between force, mass, and acceleration. The observed system accelerations for different values of force and mass were consistent with Newton’s second law. 
 \end{abstract}
 
 \maketitle
@@ -97,7 +98,7 @@ Tests ($n=6$) were conducted using a track, cart, and pulley system (\cref{fig:1
 \label{fig:2}
 \end{figure}
 
-The expected acceleration can be calculated using the tensions of each mass. As seen in \cref{fig:2}, the mass on the track moving horizontally is $m_1$ and the mass falling is $m_2$. The track is frictionless, so the force acting on $m_1$ equals the tension and is calculated as
+The acceleration predicted under Newton's second law \cref{eq:1} can be calculated using the tensions of each mass. As seen in \cref{fig:2}, the mass on the track moving horizontally is $m_1$ and the mass falling is $m_2$. The track is frictionless, so the force acting on $m_1$ equals the tension and is calculated as
 \begin{equation}
 F_1 = m_1 a = T.
 \label{eq:9}
@@ -109,18 +110,19 @@ F_2 = -m_2 a = T - m_2 g.
 \end{equation}
 Combining \cref{eq:9} and \cref{eq:10} and manipulating gives the system acceleration $a$ as a function of gravitational acceleration $g$ and the known masses $m_1$ and $m_2$:
 \begin{equation}
-a = \dfrac{m_2}{m_1 + m_2} g.
+a = \dfrac{m_2}{m_1 + m_2 + m_c} g.
 \label{eq:11}
 \end{equation}
+$m_c=\qty{0.493}{\kilo\gram}$ accounts for the empty mass of the cart. Comparison of this estimate for $a$ to measured values allows us to test the validity of \cref{eq:1}. 
 
-The measured time data were also used to calculate acceleration via kinematics assuming uniform motion \cite{tipler}:
+The measured time data were used to calculate acceleration via kinematics assuming uniform motion \cite{tipler}:
 \begin{equation}
 x = x_0 + v_0 t + \dfrac{1}{2} a t^2.
 \label{eq:12}
 \end{equation}
-Selecting $x_0=0$ and recognizing $v_0=0$, \cref{eq:12} can be solved for acceleration:
+Selecting $x_0=0$ and recognizing $v_0=0$ when starting from rest, \cref{eq:12} can be solved for acceleration:
 \begin{equation}
-a = \dfrac{2 x}{t^2},
+a_{meas} = \dfrac{2 x}{t^2},
 \label{eq:13}
 \end{equation}
 where $x=\qty{0.70}{\meter}$ is the length of the track, and $t$ is measured during each trial. 
@@ -132,40 +134,45 @@ where $x=\qty{0.70}{\meter}$ is the length of the track, and $t$ is measured dur
 
 
 \section{Results}
-Tables~\ref{tab:1} and \ref{tab:2} display the time data we collected for calculating the acceleration. \Cref{fig:3} shows calculated acceleration for all trials. 
+\Cref{tab:newtable1} shows the measured time $t$ for the system to move from rest to \qty{0.7}{\meter} as well as the resulting acceleration calculated via \cref{eq:13}, as hanging mass $m_2$ was varied between \qtyrange{0.050}{0.200}{\kilo\gram}.  Total cart mass $m_1 + m_c =\qty{1.493}{\kilogram}$. All values are listed as mean $\pm$ one standard deviation with $n=3$ replicates for each value of $m_2$. 
+\input{table1.tex}
 
-\begin{table}
-\caption{Data from experiments when the cart was \qty{1.000}{\kilo\gram} and the pulley was \qty{0.050}{\kilo\gram}.} 
-\label{tab:1}
-\begin{center}
-\begin{tabular}{ll}
-trial & time (\unit{\second}) \\
-1 & 2.43\\
-2 & 2.22\\
-3 & 2.28
-\end{tabular}
-\end{center}
-\end{table}
-	
-\begin{table}
-\caption{Data from experiments when the cart was \qty{1.000}{\kilo\gram} and the pulley was \qty{0.200}{\kilo\gram}.}
-\label{tab:2}
-\begin{center}
-\begin{tabular}{ll}
-trial & time (\unit{\second}) \\
-1 & 1.19\\
-2 & 0.91\\
-3 & 0.91
-\end{tabular}
-\end{center}
-\end{table}	
+%Tables~\ref{tab:1} and \ref{tab:2} display the time data we collected for calculating the acceleration. \Cref{fig:3} shows calculated acceleration for all trials. 
+%
+%\begin{table}
+%\caption{Data from experiments when the cart was \qty{1.000}{\kilo\gram} and the pulley was \qty{0.050}{\kilo\gram}.} 
+%\label{tab:1}
+%\begin{center}
+%\begin{tabular}{ll}
+%trial & time (\unit{\second}) \\
+%1 & 2.43\\
+%2 & 2.22\\
+%3 & 2.28
+%\end{tabular}
+%\end{center}
+%\end{table}
+%	
+%\begin{table}
+%\caption{Data from experiments when the cart was \qty{1.000}{\kilo\gram} and the pulley was \qty{0.200}{\kilo\gram}.}
+%\label{tab:2}
+%\begin{center}
+%\begin{tabular}{ll}
+%trial & time (\unit{\second}) \\
+%1 & 1.19\\
+%2 & 0.91\\
+%3 & 0.91
+%\end{tabular}
+%\end{center}
+%\end{table}	
 
-
+\Cref{fig:3} shows the measured acceleration for each trial (\cref{eq:13}) compared to the system acceleration predicted using \cref{eq:11}. Measured values are in good agreement with predictions based on \cref{eq:13} and \cref{eq:1}. 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\columnwidth]{fig3.png}
+%\includegraphics[width=\columnwidth]{fig3.png}
+\includesvg[width=\columnwidth]{fig3.svg}
 \end{center}
-\caption{The calculated acceleration of the three trials for each pulley. This includes the \qty{0.050}{\kilo\gram} mass and the \qty{0.200}{\kilo\gram} mass. The results are limited to two hanging values (\qty{0.050}{\kilo\gram} and \qty{0.200}{\kilo\gram}). Future experiments could include more variation in between to strengthen the observed trends further.}
+\caption{\label{fig:3} Measured acceleration ($a_{meas}$) for each of the three trials, from \cref{eq:13} and \cref{tab:newtable1} is shown by black dots for hanging mass $m_2=\qty{0.050}{\kilo\gram}$ and \qty{0.200}{\kilo\gram}. Predicted acceleration $a$ based on \cref{eq:11} is shown by the blue line.}
+%The results are limited to two hanging values (\qty{0.050}{\kilo\gram} and \qty{0.200}{\kilo\gram}). Future experiments could include more variation in between to strengthen the observed trends further.}
 \label{fig:3}
 \end{figure}
 
@@ -179,10 +186,10 @@ trial & time (\unit{\second}) \\
 %        The data proves our hypothesis of an inverse relationship between mass and acceleration and a direct relationship between force and acceleration.
 
 \subsection{Can we confirm that $\sum F=ma$ through experimentation?}
-Our trials demonstrated that as the pulley's mass, or the gravitational force, increases, the cart's acceleration increases. This supported our hypothesis $\sum F = ma$ \cref{eq:6n2l}. The force acting on the system increased by increasing the pulley's mass. The experimental data corroborated the hypothesis because the increased pulley mass and acceleration illustrate a direct relationship between force and acceleration. Our data showed a consistent pattern where an increase in the mass of the pulley increased the net force creating an increase in acceleration. This suggests that acceleration and force are proportional, ensuring that mass is constant \cref{eq:6n2l}. 
+Our trials demonstrated that as the hanging mass $m_2$, or the resulting gravitational force exerted on the system, increases, the system's acceleration increases. This supported our hypothesis $\sum F = ma$ \cref{eq:6n2l}. The force acting on the system increased by increasing the hanging mass $m_2$. The experimental data corroborated the hypothesis because the increased pulley mass and acceleration illustrate a direct relationship between force and acceleration. Our data showed a consistent pattern where an increase in the mass of the pulley increased the net force creating an increase in acceleration. This suggests that acceleration and force are proportional, in the case that mass is held constant \cref{eq:6n2l}. In our experiments, total system mass was $m_1+m_2+m_c$, which increased slightly, resulting in the curve of \cref{fig:3}. 
 
 \subsection{Sources of experimental error}
-A potential source of experimental error stems from the movement of the track between trials. This caused slight differences in tension, potentially affecting the calculated acceleration of the cart. Additionally, the person's timing was not consistent across all trials, nor were they rotated methodically by trial. This could result in small inconsistencies with the timing that may skew the results of calculating acceleration using a formula involving time or any other calculations involving time. In further testing, the time can be measured with sensors or videos to be more accurate. Furthermore, the expected acceleration was calculated assuming the string was massless and friction had no effect on the cart. Since the experiment used a string with mass and did not eradicate the force of friction, this could result in possible differences between the experimental and expected acceleration.
+A potential source of experimental error stems from the movement of the track between trials. This caused slight differences in tension, potentially affecting the calculated acceleration of the cart. Additionally, the person's timing was not consistent across all trials, nor were they randomized or rotated methodically by trial. This could result in small inconsistencies with the timing that may skew the results of calculating acceleration using a formula involving time or any other calculations involving time. In further testing, the time can be measured with sensors or videos to be more accurate. Furthermore, the expected acceleration was calculated assuming the string was massless and that friction had no effect on the cart. Since the experiment used a string with mass and since a frictionless system is impossible to achieve practically, this could result in possible differences between the experimental and expected acceleration.
 
 
 
