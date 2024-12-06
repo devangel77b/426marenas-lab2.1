@@ -1,4 +1,4 @@
-﻿\documentclass[reprint,amsmath,amssymb,aps]{revtex4-2}
+﻿\documentclass[reprint,amsmath,amssymb,aps,twoside]{revtex4-2}
 
 
 \usepackage{graphicx}
@@ -14,10 +14,26 @@
 \crefname{table}{Table}{Tables}
 \usepackage{svg}
 
-
-
+% set PDF metadata
+\hypersetup{%
+pdftitle={Testing Newton's second law in an accelerating system},
+pdfauthor={Miguel Arenas, Callie Butash, Jake Chin, Kriti Malhotra, Grace Nealon, and Petra Rofman},
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,RO]{J S\&E \textbf{1}, 1--3 (2024)}
+\fancyhead[LO]{Arenas et al.}
+\fancyhead[LE]{Testing Newton's second law}
+\fancyfoot[C]{\thepage}
+\fancypagestyle{mytitlepage}{
+\fancyhf{}
+\fancyhead[C]{Journal of Science \& Engineering \textbf{1}, 1--3 (2024)}
+\fancyfoot[C]{\thepage}
+}
 
 \begin{document}
+\setcounter{page}{1}
 \title{Testing Newton's second law in an accelerating system}
 \author{Miguel Arenas}
 \email{Contact author: 426marenas@frhsd.com}
@@ -33,7 +49,7 @@
 Newton’s second law claims that force is the product of mass and acceleration ($\sum F = ma$). It could be of great use when calculating the acceleration, and thus velocity and position, of a system based on the external forces acting on it; therefore we tested its validity. Using a cart and pulley system, we examined the relationships between force, mass, and acceleration. The observed system accelerations for different values of force and mass were consistent with Newton’s second law. 
 \end{abstract}
 
-\maketitle
+\maketitle\thispagestyle{mytitlepage}
 
 \section{Introduction}
 Force is the product of mass and acceleration:
